@@ -183,7 +183,7 @@ function BookTab({setModal,setTab}) {
 }
 
 function ProfileTab() {
-  const {user,setClients,clients,toast,setModal} = useApp();
+  const {user,setClients,toast,setModal} = useApp();
   const [f,setF] = useState({name:user?.name||'',email:user?.email||'',phone:user?.phone||'',address:user?.address||'',area:user?.area||''});
   const up = k => e => setF(p=>({...p,[k]:e.target.value}));
   const save = () => { setClients(prev=>prev.map(c=>c.id===user?.id?{...c,...f}:c)); toast('Profile updated!','ok'); };
