@@ -411,8 +411,8 @@ function PaymentsTab() {
         </div>
       </>)}
       <h3 style={{fontWeight:700,fontSize:14,color:'#16a34a',marginBottom:10}}>✅ Paid ({paid.length})</h3>
-      <div style={{overflowX:'auto',background:'#fff',borderRadius:14,border:'1px solid #86efac'}}>
-        <table className="admin-table">
+      <div className="table-wrap">
+          <table className="admin-table">
           <thead><tr>{['Booking','Customer','Service','Date','Amount Paid','Payment Date','Pro'].map(h=><th key={h}>{h}</th>)}</tr></thead>
           <tbody>{paid.map(b=>(
             <tr key={b.id}>
