@@ -104,7 +104,11 @@ function BookingsTab({myBks,setTab,cancelBooking,setRateModal}) {
         <div><h2 className="page-title">My Bookings</h2><p className="page-sub">Track and manage all your bookings</p></div>
         <button onClick={()=>setTab('book')} className="btn-primary">+ New Booking</button>
       </div>
+<<<<<<< HEAD
       <div className="grid-stats">
+=======
+      <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:12,marginBottom:20}}>
+>>>>>>> abe6c28b9c96175c718e0398f2d1d590f37919a8
         <Stat label="Upcoming" value={upcoming.length}/>
         <Stat label="Completed" value={completed.length}/>
         <Stat label="Total Spent" value={`£${myBks.filter(b=>b.payment==='Paid').reduce((s,b)=>s+b.amount,0)}`}/>
@@ -183,7 +187,11 @@ function BookTab({setModal,setTab}) {
 }
 
 function ProfileTab() {
+<<<<<<< HEAD
   const {user,setClients,clients,toast,setModal} = useApp();
+=======
+  const {user,setClients,toast,setModal} = useApp();
+>>>>>>> abe6c28b9c96175c718e0398f2d1d590f37919a8
   const [f,setF] = useState({name:user?.name||'',email:user?.email||'',phone:user?.phone||'',address:user?.address||'',area:user?.area||''});
   const up = k => e => setF(p=>({...p,[k]:e.target.value}));
   const save = () => { setClients(prev=>prev.map(c=>c.id===user?.id?{...c,...f}:c)); toast('Profile updated!','ok'); };

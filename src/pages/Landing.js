@@ -84,7 +84,11 @@ export default function Landing() {
       <section style={{position:'relative',minHeight:'90vh',display:'flex',alignItems:'center',overflow:'hidden'}}>
         <div style={{position:'absolute',inset:0,backgroundImage:`url(${SLIDES[slide].img})`,backgroundSize:'cover',backgroundPosition:'center',transition:'opacity .8s',filter:'brightness(.38)'}}/>
         <div style={{position:'absolute',inset:0,background:'linear-gradient(135deg,rgba(43,59,181,.75) 0%,rgba(26,95,187,.6) 100%)'}}/>
+<<<<<<< HEAD
         <div className="hero-inner" style={{position:'relative',zIndex:2}}>
+=======
+        <div style={{position:'relative',zIndex:2,maxWidth:1200,margin:'0 auto',padding:'80px 5%',width:'100%',display:'grid',gridTemplateColumns:'1fr 1fr',gap:60,alignItems:'center'}}>
+>>>>>>> abe6c28b9c96175c718e0398f2d1d590f37919a8
           <div>
             <div style={{display:'flex',gap:8,marginBottom:18,flexWrap:'wrap'}}>
               <span style={{display:'inline-block',background:'rgba(255,255,255,.18)',border:'1px solid rgba(255,255,255,.35)',color:'#fff',fontSize:12,fontWeight:700,padding:'5px 14px',borderRadius:999,letterSpacing:1,textTransform:'uppercase'}}>🌟 Trusted · Vetted · Professional</span>
@@ -111,7 +115,11 @@ export default function Landing() {
               ))}
             </div>
           </div>
+<<<<<<< HEAD
           <div className="hero-stats-grid">
+=======
+          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:14}}>
+>>>>>>> abe6c28b9c96175c718e0398f2d1d590f37919a8
             {STATS.map(s=>(
               <div key={s.l} style={{background:'rgba(255,255,255,.14)',border:'1px solid rgba(255,255,255,.25)',backdropFilter:'blur(8px)',borderRadius:16,padding:'20px 22px',textAlign:'center'}}>
                 <p style={{fontSize:34,fontWeight:800,color:'#fff',lineHeight:1,marginBottom:6}}>{s.v}</p>
@@ -274,7 +282,11 @@ export default function Landing() {
 
       {/* FOOTER */}
       <footer style={{background:'#0f1b2d',color:'rgba(255,255,255,.6)',fontSize:13,padding:'48px 5% 20px'}}>
+<<<<<<< HEAD
         <div className="footer-grid" style={{maxWidth:1200,margin:'0 auto',marginBottom:32}}>
+=======
+        <div style={{maxWidth:1200,margin:'0 auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr 1.5fr',gap:36,marginBottom:32}}>
+>>>>>>> abe6c28b9c96175c718e0398f2d1d590f37919a8
           <div>
             <img src={LOGO} alt="The Chores" style={{height:34,objectFit:'contain',marginBottom:12,filter:'brightness(10)'}}/>
             <p style={{fontSize:12,lineHeight:1.7,color:'rgba(255,255,255,.5)',maxWidth:240}}>A service by Thecla Business Solutions. Professional cleaning on demand across Waltham Cross and beyond.</p>

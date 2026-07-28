@@ -53,7 +53,11 @@ export default function ProDash() {
             <button onClick={logout} className="btn-sm-gray">Logout</button>
           </div>
         </header>
+<<<<<<< HEAD
         <main className="main-content">
+=======
+        <main style={{flex:1,overflowY:'auto',padding:'16px 16px 88px'}}>
+>>>>>>> abe6c28b9c96175c718e0398f2d1d590f37919a8
           {tab==='jobs'     && <TodayTab todaysJobs={todaysJobs} myJobs={myJobs} markComplete={markComplete} toast={toast}/>}
           {tab==='upcoming' && <UpcomingTab upcoming={upcoming}/>}
           {tab==='earnings' && <EarningsTab completed={completed}/>}
@@ -81,7 +85,11 @@ function TodayTab({todaysJobs,myJobs,markComplete,toast}) {
       <div className="page-header">
         <div><h2 className="page-title">Today's Jobs</h2><p className="page-sub">{today}</p></div>
       </div>
+<<<<<<< HEAD
       <div className="grid-stats">
+=======
+      <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:10,marginBottom:18}}>
+>>>>>>> abe6c28b9c96175c718e0398f2d1d590f37919a8
         <Stat label="Today" value={todaysJobs.length} color="#2B3BB5"/>
         <Stat label="All Assigned" value={myJobs.length} color="#2B3BB5"/>
         <Stat label="Rating" value="4.9 ⭐" color="#f59e0b"/>
@@ -174,7 +182,11 @@ function JobCard({job,markComplete,toast}) {
         <span style={{fontSize:28}}>✅</span>
         <div><p style={{fontWeight:800,fontSize:16,color:'#16a34a'}}>Job Complete!</p><p style={{fontSize:12,color:'#64748b'}}>{job.svc} — {job.clientName}</p></div>
       </div>
+<<<<<<< HEAD
       <div className="grid-detail">
+=======
+      <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:10}}>
+>>>>>>> abe6c28b9c96175c718e0398f2d1d590f37919a8
         {[
           ['Scheduled start', job.time],
           ['Checked in',      summary.checkedIn],
@@ -320,7 +332,11 @@ function EarningsTab({completed}) {
         <p style={{fontSize:42,fontWeight:800,margin:'4px 0 16px',fontFamily:"'Playfair Display',serif"}}>£{total.toFixed(2)}</p>
         <button style={{background:'rgba(255,255,255,.2)',border:'1px solid rgba(255,255,255,.4)',color:'#fff',padding:'10px 20px',borderRadius:12,fontWeight:700,fontSize:13,cursor:'pointer',fontFamily:'inherit'}}>Withdraw Funds →</button>
       </div>
+<<<<<<< HEAD
       <div className="grid-stats-2">
+=======
+      <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:12,marginBottom:18}}>
+>>>>>>> abe6c28b9c96175c718e0398f2d1d590f37919a8
         <Stat label="This Month" value={`£${monthTotal}`} sub={`${thisMonth.length} jobs`}/>
         <Stat label="All Time" value={`£${total}`} sub={`${completed.length} jobs`}/>
       </div>
